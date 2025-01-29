@@ -1,0 +1,17 @@
+# Required for interacting with Azure Blob Storage
+azure-storage-blob==12.10.0
+
+# For sending email notifications
+smtplib==3.10.1
+
+# Oracle DB interaction (using cx_Oracle for connecting to Oracle Database)
+cx_Oracle==8.3.0
+
+# Python Dotenv for loading environment variables (e.g., SAS token, Azure keys)
+python-dotenv==1.0.0
+
+# For Azure CLI operations from Python (Optional)
+subprocess==3.9.0
+
+# Requests for making HTTP requests (if needed for Azure services)
+requests==2.28.1
