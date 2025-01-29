@@ -47,7 +47,7 @@ Oracle requires specific privileges for **Data Pump** operations.
 ### 3️⃣ Create an Oracle Directory Object
 Run the following SQL command:
 
-```sql
+``sql
 CREATE OR REPLACE DIRECTORY DATA_PUMP_DIR AS 'Dir_Path';
 
 
@@ -58,7 +58,7 @@ CREATE OR REPLACE DIRECTORY DATA_PUMP_DIR AS 'Dir_Path';
 
 📌 **Uploads the dump file to Azure Blob Storage** using the command:
 
-```sh
+``sh
 az storage blob upload --container-name <container_name> --file <dmp_file>
 
 
