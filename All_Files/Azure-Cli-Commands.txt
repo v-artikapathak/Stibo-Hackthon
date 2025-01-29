@@ -1,0 +1,6 @@
+az storage blob upload \
+  --account-name dyno098 \
+  --container-name stibo-123 \
+  --name STUDENTS.dmp \
+  --file "C:\app\admin\orcl\dpdump\STUDENTS.dmp" \
+  --auth-mode key

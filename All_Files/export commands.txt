@@ -1,0 +1,5 @@
+expdp system/password@ORCL \
+  SCHEMAS=STUDENTS \
+  DIRECTORY=DATA_PUMP_DIR \
+  DUMPFILE=STUDENTS.dmp \
+  LOGFILE=students_export.log

@@ -1,0 +1,6 @@
+impdp system/password@ORCL \
+  SCHEMAS=STUDENTS \
+  DIRECTORY=DATA_PUMP_DIR \
+  DUMPFILE=STUDENTS.dmp \
+  LOGFILE=students_import.log \
+  TABLE_EXISTS_ACTION=REPLACE
