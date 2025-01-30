@@ -1,8 +1,8 @@
 import cx_Oracle
 
 # Oracle Database configuration
-oracle_username = "system"
-oracle_password = "shubrat"
+oracle_username = "Username"
+oracle_password = "Password"
 oracle_dsn = "ORCL"  # Replace with your database DSN if necessary
 
 # Step 2: Drop the existing students table (if exists)
