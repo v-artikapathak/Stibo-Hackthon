@@ -4,13 +4,13 @@ from email.mime.multipart import MIMEMultipart
 
 def send_email(subject, body, to_email):
     smtp_server = "smtp.gmail.com"  # Correct SMTP server
-    smtp_port = 587  # Port for TLS
-    sender_email = "vartikapathak74@gmail.com"
-    sender_password = "cqfy kyxg owet najr"  # Use environment variables for security
+    smtp_port = Port no.  # Port for TLS
+    sender_email = "Senders email"
+    sender_password = "Password"  # Use environment variables for security
 
     # Create email message
     msg = MIMEMultipart()
-    msg['From'] = "pvartika43@gmail.com"
+    msg['From'] = "Senders Email"
     msg['To'] = to_email
     msg['Subject'] = subject
 
