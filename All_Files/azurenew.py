@@ -3,10 +3,10 @@ import subprocess
 import os
 
 # Azure Blob Storage configuration
-connection_string = "DefaultEndpointsProtocol=https;AccountName=dyno098;AccountKey=4Gu78KQDd5HTxFIaCXb7h5zgy4RFPRbFf4DifQ8yMAk4faciC7MEtxtNBmt5r9sM0uyiF7/+JRT8+AStTUFVSg==;EndpointSuffix=core.windows.net"
-container_name = "stibo-123"
-blob_name = "STUDENTS.dmp"
-local_file_path = r'C:\app\admin\orcl\dpdump\STUDENTS.dmp'
+connection_string = "Your string"
+container_name = "Your azure container name"
+blob_name = "Dump File name"
+local_file_path = r'Local Path'
 
 
 # Step 1: Download the Data Pump file from Azure Blob Storage
@@ -26,7 +26,7 @@ def download_blob():
 def import_data():
     try:
         # Run the impdp command to import the data
-        command = f"impdp system/shubrat@ORCL DIRECTORY=DATA_PUMP_DIR DUMPFILE=STUDENTS.dmp LOGFILE=students_import.log"
+        command = f"impdp Schema/Password@ORCL DIRECTORY=DATA_PUMP_DIR DUMPFILE=STUDENTS.dmp LOGFILE=students_import.log"
         subprocess.run(command, shell=True, check=True)
         print("Import completed successfully.")
     except subprocess.CalledProcessError as e:
